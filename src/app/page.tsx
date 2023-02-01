@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <PageWrapper className="h-screenHeightWithoutHeader bg-[url(../assets/chair.jpg)] bg-cover bg-center">
+    <PageWrapper className="h-screenHeightWithoutHeader bg-[url(/chair.jpg)] bg-cover bg-center">
       <Container className="flex h-full flex-col pt-24 text-center text-2xl">
         <h1 className="mb-8 text-8xl font-bold">Welcome to Fur Nature</h1>
         <p className="mx-auto max-w-xl">

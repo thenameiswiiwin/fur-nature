@@ -1,7 +1,6 @@
 import { Container } from '@components/Container';
 import { PageWrapper } from '@components/PageWrapper';
-import ChairImg from '@assets/chair.jpg';
-import Image from 'next/image';
+import { ProductsImage } from '@components/ProductsImage';
 
 export default function Home() {
   return (
@@ -22,21 +21,9 @@ export default function Home() {
           </div>
         </div>
         <div className="[&_img]:mr-4 h-screenHeightWithoutHeader flex">
-          <Image
-            src={ChairImg}
-            alt="Nice chair"
-            className="w-full h-full object-cover"
-          />
-          <Image
-            src={ChairImg}
-            alt="Nice chair"
-            className="w-full h-full object-cover"
-          />
-          <Image
-            src={ChairImg}
-            alt="Nice chair"
-            className="w-full h-full object-cover"
-          />
+          <ProductsImage />
+          <ProductsImage />
+          <ProductsImage />
         </div>
       </Container>
     </PageWrapper>
