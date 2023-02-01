@@ -1,7 +1,8 @@
 import '@styles/globals.css';
-import { Lora } from '@next/font/google';
-import { Header } from '@components/Header';
+
 import { Footer } from '@components/Footer';
+import { Header } from '@components/Header';
+import { Lora } from '@next/font/google';
 
 const lora = Lora({
   weight: ['400', '500'],
@@ -16,12 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={lora.variable}>
-      <head>
-        <meta
-          name="viewport"
-          content="width=device-width, height=device-height, initial-scale=1"
-        />
-      </head>
+      <head />
       <body>
         <Header />
         {children}

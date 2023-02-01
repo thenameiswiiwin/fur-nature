@@ -7,11 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: '"SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif',
-      },
       colors: {
-        background: '#000212',
+        beige: '#FEF5EC',
+        black: '#111',
+      },
+      fontFamily: {
+        serif: ['var(--font-lora)'],
+      },
+      minHeight: {
+        screenHeightWithoutHeader: 'calc(100vh - 101px)',
+      },
+      height: {
+        screenHeightWithoutHeader: 'calc(100vh - 101px)',
       },
     },
   },
