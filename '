@@ -34,17 +34,11 @@ export default function Home() {
               />
             ))}
           </div>
-          <div className="flex gap-3 w-full pr-4 mt-14">
-            <button
-              type="button"
-              className="border border-black px-4 py-4 basis-4/5"
-            >
+          <div className="flex justify-around w-full">
+            <button type="button" className="border border-black">
               Download Fact Sheet
             </button>
-            <button
-              type="button"
-              className="bg-black text-white px-5 py-5 basis-1/5"
-            >
+            <button type="button" className="bg-black text-white px-4 py-4">
               <AiOutlineShoppingCart />
             </button>
           </div>

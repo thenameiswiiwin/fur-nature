@@ -10,7 +10,7 @@ export const ProductsImage = () => {
       exit={{ opacity: 0, x: 20 }}
       src="/chair.jpg"
       alt="Nice chair"
-      className="w-full h-full object-cover"
+      className="h-full w-full object-cover"
     />
   );
 };

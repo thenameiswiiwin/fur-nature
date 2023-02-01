@@ -3,16 +3,15 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 import { Container } from './Container';
-import { CartIcon } from './icons/CartIcons';
 
 const links = [
   { href: '/products', label: 'Products' },
   { href: '/our-story', label: 'Our Story' },
   { href: '/workshop', label: 'Workshop' },
   { href: '/showroom', label: 'Showroom' },
-  { href: '/long-name', label: 'A very long name to show the animation' },
 ];
 
 export const Header = () => {
@@ -41,8 +40,8 @@ export const Header = () => {
             ))}
           </ul>
         </nav>
-        <button className="ml-auto flex flex-row">
-          <CartIcon />
+        <button className="ml-auto flex flex-row items-center">
+          <AiOutlineShoppingCart size={25} />
           <span className="sr-only">Open cart</span>
           <span className="ml-2 flex h-5 w-5 items-center justify-center rounded-full bg-black text-white">
             1
